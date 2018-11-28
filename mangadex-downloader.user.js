@@ -276,7 +276,7 @@
       if (progress !== -1) {
         $('#progress-in-' + id).width(progress + '%');
       } else {
-        // $('#progress-out-' + id).remove();
+        $('#progress-out-' + id).text("Done");
       }
     }
   })();
