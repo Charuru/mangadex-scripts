@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         MangaDex Downloader
-// @version      0.17.5
+// @version      0.17.6
 // @description  A userscript to add download-buttons to mangadex
 // @author       icelord
 // @homepage     https://github.com/xicelord/mangadex-scripts
@@ -117,7 +117,7 @@
     $('div.chapter-row').find('div.order-lg-2').each((i, element) => {
       if (i === 0) return;
       
-      if ($(element).closest('.chapter-row').find('img[title="English"]').length < 1) {
+      if ($(element).closest('.chapter-row').find('.flag[title="English"]').length < 1) {
         $(element).closest('.chapter-container>.row').hide()
         return
       }
