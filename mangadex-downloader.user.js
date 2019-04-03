@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         MangaDex Downloader
-// @version      0.17.6
+// @version      0.19.6
 // @description  A userscript to add download-buttons to mangadex
 // @author       icelord
 // @homepage     https://github.com/xicelord/mangadex-scripts
@@ -151,7 +151,7 @@
           //Prepare
           let link = $('a[href="/chapter/' + id + '"]');
           const chapterInfo = {
-            manga: $("h6.card-header").contents().not($("h6.card-header").children()).text().trim(),
+            manga: $("h6.card-header .mx-1").text().trim(),
             altnames: $('.fa-book').map((i, book) => {
                 if (i > 2)
                     return $(book).parent().text().trim();
